@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+
+.box__container {
+
+}
+
+.box__container img {
+
+}
+
+.box__container h3 {
+
+}
+
+
+.box__container p {
+
+}
+
+
+.profile__container {
+
+}
+
+.profile__container img {
+
+}
+
+.profile__container h3 {
+font-size: 40px;
+}
+
+
+.profile__container p {
+  
+}
