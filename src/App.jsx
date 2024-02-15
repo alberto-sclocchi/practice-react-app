@@ -1,9 +1,24 @@
 import logo from "./logo.svg";
 import "./App.css";
 import InfoBox from "./components/InfoBox";
+import IntroBox from "./components/IntroBox";	
+import HomeInfo from "./components/HomeInfo";
 
 function App() {
 	// write code here
+	const divImg = {
+		img1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV6-DQF2pBwNFV9KzPafu9RghrNF1tZ8J3AA&usqp=CAU",
+		img2: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkmZB67e6esDKyxIUTnQhNmOvexujNJ3pccQ&usqp=CAU",
+		containerClass: "div-img"
+	}
+
+	const homeInfo = {
+		name: "react-app",
+		introParagraph: "Hi, this a new react App",
+		button: "Welcome",
+		containerClass: "home-info"
+	}
+
 	const infoBoxData = [
 		{
 			img: "/noImg",
@@ -40,17 +55,8 @@ function App() {
 	return (
 		<div className="App">
 			<div>
-				<div>
-					<img src="" />
-					<img src="" />
-				</div>
-				<div>
-					<div>
-						<h1></h1>
-						<p></p>
-					</div>
-					<button></button>
-				</div>
+				{<IntroBox {...divImg}></IntroBox>}
+				{<HomeInfo {...homeInfo}></HomeInfo>}
 			</div>
 
 			<div>
