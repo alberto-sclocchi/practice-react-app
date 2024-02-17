@@ -55,8 +55,8 @@ function App() {
 	return (
 		<div className="App">
 			<div>
-				{<IntroBox {...divImg}></IntroBox>}
-				{<HomeInfo {...homeInfo}></HomeInfo>}
+				<IntroBox {...divImg} />
+				<HomeInfo {...homeInfo} />
 			</div>
 
 			<div>
